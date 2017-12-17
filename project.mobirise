@@ -1,0 +1,222 @@
+{
+  "settings": {
+    "name": "cpadmin",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#fe334d",
+        "secondaryColor": "#ff4363",
+        "successColor": "#eafd43",
+        "infoColor": "#feaa7f",
+        "warningColor": "#c942c9",
+        "dangerColor": "#eba449",
+        "mainFont": "Rubik",
+        "display1Font": "master_of_break-webfont",
+        "display1Size": "4.4",
+        "display2Font": "Oxygen",
+        "display2Size": 3,
+        "display5Font": "Oxygen",
+        "display5Size": 1.5,
+        "display7Font": "Oxygen",
+        "display7Size": 1,
+        "display4Font": "Oxygen",
+        "display4Size": 1,
+        "isRoundedButtons": false,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": true
+      },
+      "additionalSetColors": [
+        "#fe334d",
+        "#eba449",
+        "#c942c9",
+        "#feaa7f",
+        "#eafd43",
+        "#cc6666",
+        "#66cc66"
+      ]
+    },
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n\n",
+    "robotsSwitcher": "on",
+    "siteUrl": "",
+    "sitemapSwitcherAuto": "on",
+    "favicon": "@PROJECT_PATH@/assets/images/minih-128x128.png",
+    "noImageResize": "",
+    "google-analytics": "",
+    "cookiesAlert": "",
+    "versionFirst": "4.5.2",
+    "uniqCompNum": 8,
+    "versionPublish": "4.5.2"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "CP Admin - Hermann Hub Server",
+        "meta_descr": "Admin panel of hermannhub.com server",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "content5",
+          "_customHTML": "<section class=\"mbr-section content5\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1618x1080.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#0f7699\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center mbr-bold mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\"><span style=\"font-weight: normal;\">Hermann &nbsp;Hub</span></h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\"><i>Server</i></h3>\n                <p class=\"mbr-text align-center mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\" mbr-article data-multiline>Este es el servidor de Hermann Hub con fines administrativos<br><b>¡Por favor, si no eres un usuario verificado del servidor, no accedas a los siguientes enlaces!</b></p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"https://cpadmin.hermannhub.com:8083\">VESTA PANEL</a>\n                    <a class=\"btn btn-white-outline\" href=\"https://cpadmin.hermannhub.com/webmail\">WEBMAIL</a>  <a class=\"btn btn-white-outline\" href=\"https://cpadmin.hermannhub.com/dbmanager\">BASE DE DATOS</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qE50AfAuh3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content5-3"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h3": {
+              "text-align": "center",
+              "font-weight": "300"
+            },
+            ".wrap": {
+              "width": "150px",
+              "height": "150px",
+              "margin": "0 auto"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".card": {
+              "-webkit-flex-basis": "100%",
+              "flex-basis": "100%",
+              "word-wrap": "break-word"
+            },
+            "ellipse": {
+              "stroke": "rgba(206, 206, 206, 0.4)"
+            },
+            "path": {
+              "stroke": "@progressColor"
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".card": {
+                "-webkit-flex-basis": "33%",
+                "flex-basis": "33%"
+              }
+            },
+            "P": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            "H4": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "progress-bars3",
+          "_customHTML": "<section class=\"progress-bars3\" group=\"Progress\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"as-pie-progress\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n       \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"color\" title=\"Progress Color\" name=\"progressColor\" value=\"#fe334d\">\n\n        <select title=\"Progress count\" name=\"progressCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"range\" inline title=\"Progress 1\" name=\"progress1\" min=\"0\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Progress 2\" name=\"progress2\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"progressCount>1\">\n        <input type=\"range\" inline title=\"Progress 3\" name=\"progress3\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"progressCount>2\">\n        <input type=\"range\" inline title=\"Progress 4\" name=\"progress4\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"progressCount>3\">\n        <input type=\"range\" inline title=\"Progress 5\" name=\"progress5\" min=\"0\" max=\"100\" step=\"1\" value=\"90\" condition=\"progressCount>4\">\n        <input type=\"range\" inline title=\"Progress 6\" name=\"progress6\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"progressCount>5\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#926150\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Berlin Server</h2>\n\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Estadisticas del servidor.</h3>\n    \n        <div class=\"media-container-row pt-5 mt-2\">\n            <div class=\"card p-3 align-center\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress1\" role=\"progressbar\" data-goal=\"{{progress1}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\">100%</p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">DB</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>1\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress2\" role=\"progressbar\" data-goal=\"{{progress2}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\">60%</p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">NGINX</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>2\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress3\" role=\"progressbar\" data-goal=\"{{progress3}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">PHP</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>3\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress4\" role=\"progressbar\" data-goal=\"{{progress4}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">CORREO</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>4\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress5\" role=\"progressbar\" data-goal=\"{{progress5}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Study</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>5\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress6\" role=\"progressbar\" data-goal=\"{{progress6}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Gifts</h4>\n                </div>                 \n            </div>\n        </div>\n</div></section>",
+          "_cid": "qE531K3E1z",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "progress-bars3-7"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".media-wrap": {
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem",
+                "text-align": "center"
+              },
+              ".mbr-iconfont-logo": {
+                "font-size": "7rem",
+                "color": "#f36"
+              },
+              "img": {
+                "height": "6rem"
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676"
+            },
+            ".footer-lower": {
+              ".copyright": {
+                "@media (max-width: 767px)": {
+                  "margin-bottom": "1rem",
+                  "text-align": "center"
+                }
+              },
+              "hr": {
+                "margin": "1rem 0",
+                "border-color": "#000",
+                "opacity": ".05"
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "justify-content": "flex-end",
+                "-webkit-justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.3rem",
+                  "color": "#232323"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "-webkit-transition": ".2s linear",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "justify-content": "center",
+                  "-webkit-justify-content": "center"
+                }
+              }
+            }
+          },
+          "_name": "footer5",
+          "_customHTML": "<section group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showCopyright\" checked>\n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"0\">0</option>\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-3\">\n                <div class=\"media-wrap\">\n                    <a href=\"https://cpadmin.hermannhub.com\">\n                       <img src=\"@PROJECT_PATH@/assets/images/minih-500x500.png\" alt=\"Mobirise\" title>\n                    </a>\n                </div>\n            </div>\n            <div class=\"col-md-9\">\n                <p class=\"mbr-text align-right links mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".links\">\n                    <a href=\"https://www.hermannhub.com/about\" class=\"text-black\">ABOUT</a>&nbsp; &nbsp; &nbsp;&nbsp;<a href=\"https://www.hermannhub.com/about\" class=\"text-black\">TERMS</a>&nbsp; &nbsp; &nbsp;&nbsp;<a href=\"https://support.hermannhub.com\">CONTACT&nbsp;/ SUPPORT</a></p>\n            </div>\n        </div>\n        <div class=\"footer-lower\" mbr-if=\"showCopyright\">\n            <div class=\"media-container-row\">\n                <div class=\"col-md-12\">\n                    <hr>\n                </div>\n            </div>\n            <div class=\"media-container-row mbr-white\">\n                <div class=\"col-md-6 copyright\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright > p\">©2018 Hermann Hub. All Rights Reserved.</p>\n                </div>\n                <div class=\"col-md-6\">\n                    <div class=\"social-list align-right\" mbr-if=\"iconsCount > 0\">\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>0\">\n                            <a href=\"https://twitter.com/hermannhub\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-twitter socicon\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>1\">\n                            <a href=\"https://facebook.com/hermannhub\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-facebook socicon\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>2\">\n                            <a href=\"https://www.youtube.com/channel/UCZyfCo1IkTDGnHkyPRMwv9g\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-youtube socicon\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>3\">\n                            <a href=\"https://instagram.com/hermannhub_\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-instagram socicon\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>4\">\n                            <a href=\"https://plus.google.com/b/117707969982448203508\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-googleplus socicon\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>5\">\n                            <a href=\"mailto:info@hermannhub.com\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-mail socicon\"></span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qE51xeMJ2V",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "footer5-6"
+        }
+      ]
+    }
+  }
+}
